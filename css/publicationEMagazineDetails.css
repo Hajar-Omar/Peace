@@ -1,0 +1,90 @@
+.bookTitle{ font-weight: 600; margin: 5% 0; }
+
+/*****/
+.b-wrap { background-image: url() !important; background-repeat: no-repeat; width: 100% !important; height: 100% !important; padding: 40px !important;}
+.ContainerBook{/* width: 76.4%!important;*/ height: 550px!important; margin-bottom: 7%; box-shadow: 0 0 30px #a2a2a2; }
+.b-page{ height: 100% !important;}
+/****/
+
+#bookCover{box-shadow: 0 0 22px #131313;}
+
+.ContainerBook div.pageOne{ text-align: center;}
+.ContainerBook div.pageOne>h1{color: #b31c21; font-size: 2.5em;  text-transform: uppercase;}
+.ContainerBook div.pageOne>h2{color: #5a5a5a; font-size: 1.3em; margin-top: 10%;  text-transform: uppercase;}
+.ContainerBook div.pageOne>h3{ font-size: 18px; font-weight: 600;}
+.ContainerBook div.pageOne>h4{ font-size: 1.2em; color: #4c4c4c; margin-bottom: 5%; margin-top: 0; font-weight: 600;}
+.ContainerBook div.pageOne>p{ text-transform: uppercase; margin-bottom: 0; font-size: 0.8em; color: #484848;}
+.ContainerBook div.pageOne>img{ width: 55%; margin-top: 6%; background-color: beige;}
+
+.ContainerBook div.pageTwo>h3{color: #b31c21; font-size: 1.3em; font-weight: 600; text-transform: uppercase;}
+.ContainerBook div.pageTwo>p{color: #404040; font-size: 0.82em; margin-top: 12%;}
+.ContainerBook div.pageTwo>h6{color: #b31c21; font-size: 0.8em; font-weight: 600; position: absolute; bottom: 4%;}
+
+
+
+
+
+
+/********************************/
+/*          Media Queries       */
+/********************************/
+@charset "UTF-8";
+/* CSS Document */
+
+@-ms-viewport {
+   width: device-width;
+}
+
+@viewport {
+   width: device-width;
+}
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (max-width : 767px) {     /*** iphone5 portrait ***/
+	.ContainerBook{margin-top: 40px!important;}
+	.ContainerBook div.pageTwo>p{ height: 460px; margin-top: 0%;  overflow: scroll;}
+	.b-wrap{ padding: 5px !important;}
+	.ContainerBook div.pageTwo>h6{ bottom: 0%;}
+
+	.ContainerBook div.pageOne>h1{ font-size: 1.5em;}
+	.ContainerBook div.pageOne>h2{font-size: 1em;}
+}
+@media only screen and (max-width : 480px) {
+   
+}
+
+@media only screen and (min-width : 480px) and (max-width : 767px) { /*** iphone5 landscape ***/
+	.ContainerBook{margin-top: 40px!important;}
+	.ContainerBook div.pageTwo>p{ height: 460px;  margin-top: 0%;  overflow: scroll;}
+	.b-wrap{ padding: 5px !important;}
+	.ContainerBook div.pageTwo>h6{ bottom: 0%;}
+
+	.ContainerBook div.pageOne>h1{ font-size: 1.5em;}
+	.ContainerBook div.pageOne>h2{font-size: 1em;}
+}
+
+@media only screen and (min-width : 768px) and (max-width : 1023px) {  /*** tablet portrait ***/
+	.ContainerBook{margin-top: 40px!important;}
+
+	/*.b-wrap { width: 100% !important; height: 100% !important; }
+	.ContainerBook{ width: 100%!important; height: 550px!important;  } /*700*/
+	/*.b-page{ height: 100% !important;}*/ /*50%*/
+}
+@media (min-width: 991px) {
+  
+}
+@media (max-width: 991px) {
+   
+   
+}
+@media only screen and (min-width : 1024px) and (max-width : 1279px) { /* mini pc */ /* tablet landscape*/
+    .ContainerBook{margin-top: 40px!important;}
+}
+@media (min-width: 1400px) {    /***  zoom in ***/
+	.ContainerBook div.pageTwo>p{ height: 460px; font-size: 0.5em; margin-top: 0%; line-height: 0.7em; overflow: scroll;}
+	.b-wrap{ padding: 20px !important;}
+	.ContainerBook div.pageTwo>h6{font-size: 0.5em; bottom: 0%;}
+	
+}
+/* iPhone 4 ----------- */
+@media only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5) {
+}

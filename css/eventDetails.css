@@ -1,0 +1,5 @@
+a.btn.btn-sm.customBtn.second{    font-size: 1.3em;
+    margin-bottom: -5px;  margin-left: 8px!important; margin-right: 8px!important;}
+    a.btn.btn-sm.customBtn.first{ 
+        margin-bottom: -7px; margin-left: 8px !important;}
+        a.btn.btnCustom:hover{ color: #565656;}

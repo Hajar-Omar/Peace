@@ -1,0 +1,102 @@
+/* Removes the default 20px margin and creates some padding space for the indicators and controls */
+.carousel {
+    margin-bottom: 0;
+
+}
+/* Reposition the controls slightly */
+.carousel-control {
+	left: -12px;
+}
+.carousel-control.right {
+	right: -12px;
+}
+/* Changes the position of the indicators */
+.carousel-indicators {
+	top: 100%;
+}
+/* Changes the colour of the indicators */
+.carousel-indicators li {
+    background: #d2d2d2;
+    border-radius: 0;
+    width: 25px;
+    height: 5px; margin: 0;
+}
+.carousel-indicators .active {
+background: #f3b41e;
+border-radius: 0;
+width: 25px;
+height: 5px;
+}
+/****************************************************************************/
+.customBtn{ margin-left: 0 !important; }
+.customBtn>i{ color: white;}
+.dash{position: relative; top: 0; margin: 0 10px; }
+
+.group.inner.list-group-item-text{ font-size: 2.5em;}
+.btnCustom{ padding: 7px 25px; }
+.paragraph{ font-size: 20px; line-height: 1.5em;}
+.text{ font-weight: 600; margin-bottom: 4%;}
+
+
+.page{ margin-top: 5%;}
+
+.carouselBlock{
+    -webkit-transform: scale(1);
+    -webkit-transition: 0.3s ease-in-out;
+    transform: scale(1);
+    transition: 0.3s ease-in-out;
+}
+.carouselBlock:hover {
+    -webkit-transform: scale(1.08);
+    transform: scale(1.08); 
+}
+
+
+
+
+
+
+/********************************/
+/*          Media Queries       */
+/********************************/
+@charset "UTF-8";
+/* CSS Document */
+
+@-ms-viewport {
+   width: device-width;
+}
+
+@viewport {
+   width: device-width;
+}
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (max-width : 767px) {     /*** iphone5 portrait ***/
+   
+}
+@media only screen and (max-width : 480px) {
+   
+}
+
+@media only screen and (min-width : 480px) and (max-width : 767px) { /*** iphone5 landscape ***/
+  
+}
+
+@media only screen and (min-width : 768px) and (max-width : 1023px) {  /*** tablet portrait ***/
+
+}
+@media (min-width: 991px) {
+  
+}
+@media (max-width: 991px) {
+   
+   
+}
+@media only screen and (min-width : 1024px) and (max-width : 1279px) { /* mini pc */ /* tablet landscape*/
+ 
+}
+@media (min-width: 1400px) {    /***  zoom in ***/
+    .page { margin-top: 2%; }
+}
+/* iPhone 4 ----------- */
+@media only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5) {
+}

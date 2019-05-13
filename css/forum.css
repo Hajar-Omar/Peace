@@ -1,0 +1,103 @@
+.forumBlock>h4 {
+    padding: 12px;
+    margin-bottom: 50px;
+    color: white;
+    width: 100%;
+    background-color: #abd8db;
+    margin-top: 0;
+}
+
+.forumBlock {
+    background: transparent;
+}
+
+.forumBlock .blockBelow {
+    height: auto;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.art {
+    float: left;
+    border: 1px solid #dadada;
+    border-radius: 50px;
+    width: 80px;
+    height: 80px;
+    padding: 27px;
+}
+.blockBelow>div>section {
+    display: block;
+    width: 55%;
+    float: right;
+}
+.blockBelow>div>section>h5 {font-size: 25px;margin: 0;}
+
+.blockBelow>div>section>h3 {
+    font-size: 60px;
+    margin: 0;
+    padding-left: 5px;
+}
+.forumBlock>section>h4{  font-size: 20px; color: #333333;   font-weight: 600;
+    margin: 25px 0;}
+
+
+    .forumBlock>section>p { color:#5f5f5f;     line-height: 1.8;
+        font-size: 16px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/********************************/
+/*          Media Queries       */
+/********************************/
+@charset "UTF-8";
+/* CSS Document */
+
+@-ms-viewport {
+   width: device-width;
+}
+
+@viewport {
+   width: device-width;
+}
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (max-width : 767px) {     /*** iphone5 portrait ***/
+   .blockBelow>div{padding-bottom: 15px; margin-bottom: 50px; border-bottom: 1px solid #eee;}
+   .forumBlock .blockBelow, .blockBelow>div:last-child{ border-bottom: none;}
+}
+@media only screen and (max-width : 480px) {
+   
+}
+
+@media only screen and (min-width : 480px) and (max-width : 767px) { /*** iphone5 landscape ***/
+  
+}
+
+@media only screen and (min-width : 768px) and (max-width : 1023px) {  /*** tablet portrait ***/
+
+}
+@media (min-width: 991px) {
+  
+}
+@media (max-width: 991px) {
+   
+   
+}
+@media only screen and (min-width : 1024px) and (max-width : 1279px) { /* mini pc */ /* tablet landscape*/
+    .forumBlock .blockBelow{ margin-left: 0;}
+}
+@media (min-width: 1400px) {    /***  zoom in ***/
+
+}
+/* iPhone 4 ----------- */
+@media only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5) {
+}

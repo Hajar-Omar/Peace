@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Photo Gallery</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src=" ../js/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="../js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+
+    <!--<link rel="stylesheet" href="../css/colorbox.css" />
+    <script src="../js/jquery.colorbox.js"></script>
+    <script src="../js/colorBoxScript.js"></script>-->
+    <!-- Magnific Popup core CSS file -->
+    <link rel="stylesheet" href="../css/magnific-popup.css">
+
+
+    <!-- Magnific Popup core JS file -->
+    <script src="../js/jquery.magnific-popup.js"></script>
+
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/photoGalleryStyle.css">
+    <script src="../js/photoGallery.js"></script>
+
+</head>
+
+<body>
+
+
+    <!-- header -->
+    <header>
+        <div class="container">
+
+            <section class="fastlinks pull-right">
+
+                <nav class="navbar navbar-default navbarFirst">
+
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+
+                    </div>
+
+
+
+                    <ul class="nav navbar-nav navbar-nav-first">
+
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle accessibility" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-universal-access" aria-hidden="true"></i>&nbsp;&nbsp;Accessbility</a>
+
+                            <ul class="dropdown-menu">
+                                <hr class="hr-drop" />
+                                <!-- <li role="separator" class="divider"></li>-->
+                                <li><a href="#"><i class="fa fa-low-vision dropfa" aria-hidden="true"></i>Color Blind</a></li>
+                                <li><a href="#"><i class="fa fa-deaf dropfa" aria-hidden="true"></i>Hearing</a></li>
+                                <li><a href="#"><i class="fa fa-wheelchair dropfa" aria-hidden="true"></i>Handicap</a></li>
+                                <li>
+                                    <ul>
+                                        <li><a href="#"><i class="fa fa-font fa-2x" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-font fa-ctsX" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-font fa-x" aria-hidden="true"></i></a></li>
+                                    </ul>
+
+                                </li>
+
+                            </ul>
+                        </li>
+
+                        <li><a href="#"><i class="fa fa-language" aria-hidden="true"></i>&nbsp;&nbsp;English</a></li>
+                        <li><span class="dash">|</span></li>
+
+                        <li><a href="#" class="register"><i class="fa fa-unlock-alt" aria-hidden="true"></i>&nbsp;&nbsp;Register</a></li>
+                    </ul>
+
+                </nav>
+
+
+                <div class="search pull-right">
+                    <input type="text" class="form-control searchInput" placeholder="SEARCH">
+                    <a href="#" class="searchBtn"><img src="../images/searchIcon.png" alt="Search" /></a>
+                </div>
+
+            </section>
+            <div class="logo pull-right">
+                <a href="../index.html"><img src="../images/logo.png" alt="here is the logo!" /></a>
+            </div>
+        </div>
+        <!-- end container -->
+    </header>
+
+
+    <section class="sm">
+        <ul>
+            <li class="smLink"><a href="#"><i class="fa fa-cogs" aria-hidden="true"></i><span>settings</span></a></li>
+            <li class="smLink"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i><span>facebook</span></a></li>
+            <li class="smLink"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i><span>twitter</span></a></li>
+            <li class="smLink"><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i><span>youtube</span></a></li>
+        </ul>
+    </section>
+
+
+    <!-- ************************* second navbar ***************************-->
+    <nav class="navbar navbar-default navbarScond">
+        <div class="container">
+
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">About Peace</a></li>
+                    <li><a href="./forum.html">Forum</a>
+                    </li>
+                    <li><a href="#">Initiatives</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="./publication.html">Publications</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="./publication.html">Articles</a></li>
+                            <li><a href="./publicationEMagazine.html">E-Magazine</a></li>
+                            <li><a href="./publicationBook.html">Books</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Imam Hasssan Awards</a></li>
+                    <li><a href="./news.html" class="selectedAncor">Media Center</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+
+            </div>
+
+        </div>
+    </nav>
+    <!-- ************************* end of second navbar ********************-->
+
+    <div style="clear:both;"></div>
+
+
+    <!-- *************************************    ***************************-->
+
+    <section class="container-fluid bar">
+        <section class="container">
+
+            <section class="pull-right icons">
+                <!-- <div class="well well-sm">-->
+                <div class="btn-group pull-right" data-toggle="buttons">
+                    <a href="#" id="list" class="btn btn-sm customBtn">
+                        <!--<label class="btn btn-primary">-->
+
+                        <i class="fa fa-list-ul fa-2x" aria-hidden="true"></i>
+
+                    </a>
+                    <a href="#" id="grid" class="btn btn-sm customBtn">
+                        <!-- <label class="btn btn-primary active">-->
+                        <i class="fa fa-th-large fa-2x selectedView" aria-hidden="true"></i>
+
+                    </a>
+                </div>
+            </section>
+
+            <section class="pull-left">
+                <ul class="breadcrumb">
+                    <li><a href="../index.html">HOME</a></li>
+                    <li><a href="./news.html">MEDIA CENTER</a></li>
+                    <li class="active">PHOTO GALLERY</li>
+                </ul>
+                <h3>PHOTO GALLERY</h3>
+            </section>
+
+        </section>
+    </section>
+
+
+    <section class="container">
+        <section class="row drops">
+            <div class="pull-left col-xs-4 col-md-4">
+                <select name="" id="" class="form-control">
+                    <option value="">Choose a Category</option>
+                    <option value="">CSS</option>
+                    <option value="">JavaScript</option>
+                    <option value="">NodeJs</option>
+                </select>
+            </div>
+
+            <div class="pull-right col-xs-8 col-md-8">
+                <div class="pull-right">
+                    <select name="" id="" class="form-control">
+                        <option value="">12</option>
+                        <option value="">6</option>
+                        <option value="">7</option>
+                        <option value="">9</option>
+                    </select>
+                </div>
+
+                <h6 class="pull-right">photos per page: </h6>
+            </div>
+        </section>
+    </section>
+
+
+
+
+
+    <!--******************************* ********************************-->
+
+
+    <div class="container">
+        <div class="row">
+            <section class="col-md-3">
+                <div class="rowSideBar">
+                    <ul class="sideBar">
+                        <li>
+                            <a href="./news.html">
+                            <i class="fa fa-newspaper-o" aria-hidden="true"></i>
+                            <h4>News</h4>
+                        </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                            <i class="fa fa-bullhorn" aria-hidden="true"></i>
+                            <h4>Press Releases</h4>
+                        </a>
+                        </li>
+                        <li>
+                            <a href="./photoGallery.html" class="selectedA">
+                            <i class="fa fa-picture-o" aria-hidden="true"></i>
+                            <h4>Photo Gallery</h4>
+                        </a>
+                        </li>
+                        <li>
+                            <a href="./videoGallery.html">
+                            <i class="fa fa-file-video-o" aria-hidden="true"></i>
+                            <h4>Video Gallery</h4>
+                        </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </section>
+
+
+            <section class="col-md-9">
+                <div class="row">
+
+                    <div id="products" class="list-group popup-gallery">
+
+                        <div class="item col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                            <div class="thumbnail">
+                                <a href="../images/conference-gis.png" title="Many Western intellectuals. Historians and law scholars agree...">
+                                <img class="group list-group-image" src="../images/conference-gis.png" alt="" />
+                                <div class="overlayHover"><i class="fa fa-plus" aria-hidden="true"></i></div>
+		                    </a>
+                                <div class="caption">
+                                    <p class="group inner list-group-item-text">
+                                        Many Western intellectuals. Historians and law scholars Many Western intellectuals Historians and law scholars Many Western
+                                        intellectuals. Historians and law scholarsagree...</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                            <div class="thumbnail">
+                                <a href="../images/conference-preview.jpg" title="Many Western intellectuals. Historians and law scholars agree...">                            
+                                <img class="group list-group-image" src="../images/conference-preview.jpg" alt="" />
+                                <div class="overlayHover"><i class="fa fa-plus" aria-hidden="true"></i></div>                                
+                            </a>
+                                <div class="caption">
+                                    <p class="group inner list-group-item-text">
+                                        Many Western intellectuals. Historians and law scholars Many Western intellectuals Historians and law scholars Many Western
+                                        intellectuals. Historians and law scholarsagree...</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                            <div class="thumbnail">
+                                <a href="../images/conference_center.jpg" title="Many Western intellectuals. Historians and law scholars agree...">                            
+                                <img class="group list-group-image" src="../images/conference_center.jpg" alt="" />
+                                <div class="overlayHover"><i class="fa fa-plus" aria-hidden="true"></i></div>                                
+                            </a>
+                                <div class="caption">
+                                    <p class="group inner list-group-item-text">
+                                        Many Western intellectuals. Historians and law scholars Many Western intellectuals Historians and law scholars Many Western
+                                        intellectuals. Historians and law scholarsagree...</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                            <div class="thumbnail">
+                                <a href="../images/file.jpg" title="Many Western intellectuals. Historians and law scholars agree...">                            
+                                <img class="group list-group-image" src="../images/file.jpg" alt="" />
+                                <div class="overlayHover"><i class="fa fa-plus" aria-hidden="true"></i></div>                                
+                            </a>
+                                <div class="caption">
+                                    <p class="group inner list-group-item-text">
+                                        Many Western intellectuals. Historians and law scholars Many Western intellectuals Historians and law scholars Many Western
+                                        intellectuals. Historians and law scholarsagree...</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                            <div class="thumbnail">
+                                <a href="../images/conference_center.jpg" title="Many Western intellectuals. Historians and law scholars agree...">                            
+                                <img class="group list-group-image" src="../images/conference_center.jpg" alt="" />
+                                <div class="overlayHover"><i class="fa fa-plus" aria-hidden="true"></i></div>                                
+                            </a>
+                                <div class="caption">
+                                    <p class="group inner list-group-item-text">
+                                        Many Western intellectuals. Historians and law scholars Many Western intellectuals Historians and law scholars Many Western
+                                        intellectuals. Historians and law scholarsagree...</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                            <div class="thumbnail">
+                                <a href="../images/file.jpg" title="Many Western intellectuals. Historians and law scholars agree...">                            
+                                <img class="group list-group-image" src="../images/file.jpg" alt="" />
+                                <div class="overlayHover"><i class="fa fa-plus" aria-hidden="true"></i></div>                                
+                            </a>
+                                <div class="caption">
+                                    <p class="group inner list-group-item-text">
+                                        Many Western intellectuals. Historians and law scholars Many Western intellectuals Historians and law scholars Many Western
+                                        intellectuals. Historians and law scholarsagree...</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="item col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                            <div class="thumbnail">
+                                <a href="../images/conference-gis.png" title="Many Western intellectuals. Historians and law scholars agree...">
+                                <img class="group list-group-image" src="../images/conference-gis.png" alt="" />
+                                <div class="overlayHover"><i class="fa fa-plus" aria-hidden="true"></i></div>
+		                    </a>
+                                <div class="caption">
+                                    <p class="group inner list-group-item-text">
+                                        Many Western intellectuals. Historians and law scholars Many Western intellectuals Historians and law scholars Many Western
+                                        intellectuals. Historians and law scholarsagree...</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                            <div class="thumbnail">
+                                <a href="../images/conference-preview.jpg" title="Many Western intellectuals. Historians and law scholars agree...">                            
+                                <img class="group list-group-image" src="../images/conference-preview.jpg" alt="" />
+                                <div class="overlayHover"><i class="fa fa-plus" aria-hidden="true"></i></div>                                
+                            </a>
+                                <div class="caption">
+                                    <p class="group inner list-group-item-text">
+                                        Many Western intellectuals. Historians and law scholars Many Western intellectuals Historians and law scholars Many Western
+                                        intellectuals. Historians and law scholarsagree...</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                            <div class="thumbnail">
+                                <a href="../images/conference_center.jpg" title="Many Western intellectuals. Historians and law scholars agree...">                            
+                                <img class="group list-group-image" src="../images/conference_center.jpg" alt="" />
+                                <div class="overlayHover"><i class="fa fa-plus" aria-hidden="true"></i></div>                                
+                            </a>
+                                <div class="caption">
+                                    <p class="group inner list-group-item-text">
+                                        Many Western intellectuals. Historians and law scholars Many Western intellectuals Historians and law scholars Many Western
+                                        intellectuals. Historians and law scholarsagree...</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                            <div class="thumbnail">
+                                <a href="../images/file.jpg" title="Many Western intellectuals. Historians and law scholars agree...">                            
+                                <img class="group list-group-image" src="../images/file.jpg" alt="" />
+                                <div class="overlayHover"><i class="fa fa-plus" aria-hidden="true"></i></div>                                
+                            </a>
+                                <div class="caption">
+                                    <p class="group inner list-group-item-text">
+                                        Many Western intellectuals. Historians and law scholars Many Western intellectuals Historians and law scholars Many Western
+                                        intellectuals. Historians and law scholarsagree...</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                            <div class="thumbnail">
+                                <a href="../images/conference_center.jpg" title="Many Western intellectuals. Historians and law scholars agree...">                            
+                                <img class="group list-group-image" src="../images/conference_center.jpg" alt="" />
+                                <div class="overlayHover"><i class="fa fa-plus" aria-hidden="true"></i></div>                                
+                            </a>
+                                <div class="caption">
+                                    <p class="group inner list-group-item-text">
+                                        Many Western intellectuals. Historians and law scholars Many Western intellectuals Historians and law scholars Many Western
+                                        intellectuals. Historians and law scholarsagree...</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                            <div class="thumbnail">
+                                <a href="../images/file.jpg" title="Many Western intellectuals. Historians and law scholars agree...">                            
+                                <img class="group list-group-image" src="../images/file.jpg" alt="" />
+                                <div class="overlayHover"><i class="fa fa-plus" aria-hidden="true"></i></div>                                
+                            </a>
+                                <div class="caption">
+                                    <p class="group inner list-group-item-text">
+                                        Many Western intellectuals. Historians and law scholars Many Western intellectuals Historians and law scholars Many Western
+                                        intellectuals. Historians and law scholarsagree...</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+        </div>
+    </div>
+    <!-- *************************** end list/grid view ***********************************-->
+
+
+
+
+    <!-- *********************************** pagination **********************************-->
+    <section class="container-fluid page">
+        <nav aria-label="...">
+            <ul class="pagination">
+                <li class="page-item">
+                    <a class="page-link" id="prev" href="#" tabindex="-1">Previous</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link number" href="#">1</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link number" href="#">2</a>
+                </li>
+                <li class="page-item active">
+                    <a class="page-link number" href="#">3<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link number" href="#">4</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link number" href="#">5</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link number" href="#">6</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link number" href="#">7</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link number" href="#">8</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link number" href="#">9</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" id="next" href="#">Next</a>
+                </li>
+            </ul>
+        </nav>
+    </section>
+    <!-- *********************************** end of pagination **********************************-->
+
+
+    <!-- ****************************** footer ************************ -->
+    <footer>
+        <section class="container-fluid">
+            <section class="col-md-offset-1 col-md-10">
+                <article class="row">
+                    <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                </article>
+                <article class="links row">
+                    <ul class="col-md-offset-1 col-md-10">
+                        <li><a href="#">Site Map</a><span>|</span></li>
+                        <li><a href="#">Privacy Policy</a><span>|</span></li>
+                        <li><a href="#">Terms and conditions</a><span>|</span></li>
+                        <li><a href="#">FAQs</a><span>|</span></li>
+                        <li><a href="#">Contact Us</a><span>|</span></li>
+                        <li><a href="#">Quick Link</a></li>
+                    </ul>
+                </article>
+                <article class="row">
+                    <p>Site last updated: 10/06/2017 12:35 PM | Supports IE 7.0+, Safari 4.0+, Chrome & Firefox 3.5+, Best Viewd
+                        in 1024x768 screen resolution</p>
+                </article>
+            </section>
+        </section>
+
+        <section>
+            <article class="container-fluid copyRight">
+                <h6>Copyrights 2017, Peace Enforcement - All Rights Reserved</h6>
+            </article>
+        </section>
+
+    </footer>
+
+
+</body>
+
+</html>

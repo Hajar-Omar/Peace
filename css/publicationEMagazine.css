@@ -1,0 +1,102 @@
+
+input[name=search]{ font-size: 14px;}
+
+
+.thumbnail{ box-shadow: 0 0 0 0;}
+.thumbnail:hover{ box-shadow: 0px 0px 15px 5px #b9b7b7;}
+.cont{ position: relative; display: block; float: left; width: 100%;
+    background-color: #eee;
+    text-align: center;}
+
+.overlayHover{  padding: 10% 0; display: none; overflow: hidden; }
+.cont>img{margin: 10% 0; box-shadow: -2px 2px 8px 2px #3c3c3c;}
+
+.btnCustom{ margin-bottom: 13px !important; }
+
+.fa-download ,.btnCustom:nth-child(2){ background-color: transparent; color: #f1b41e !important;}
+
+.group.inner.list-group-item-text{ color: #3c3c3c;}
+
+.caption>h5{ font-weight: 100 !important;}
+.caption>hr{ width: 100%;  margin-top: 5px;     margin-bottom: 10px;}
+
+.list-group-item>.thumbnail{ width: 100%;}
+.list-group-item>.thumbnail .caption{     padding: 3% 6%; display: block; float: left; width: 70%; }
+.list-group-item>.thumbnail .cont{ width: 30%;}
+
+.list-group-item>.thumbnail .cont>img{margin-left: 14%;}
+.list-group-item>.thumbnail .caption>hr{ width: 100%;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/********************************/
+/*          Media Queries       */
+/********************************/
+@charset "UTF-8";
+/* CSS Document */
+
+@-ms-viewport {
+   width: device-width;
+}
+
+@viewport {
+   width: device-width;
+}
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (max-width : 767px) {     /*** iphone5 portrait ***/
+    .item.list-group-item{ width: 93.5%; margin-left: 10px;}
+    input[name=search] { font-size: 12px; padding-left: 3px; }
+    .caption>hr { width: 90%; margin:0; }
+    .group.inner.list-group-item-text{ margin-bottom: 0;}
+    .list-group-item>.thumbnail .list-group-item-text { padding-top: 5px; }
+    .list-group-item>.thumbnail .caption { padding: 2% 11%; }
+    .list-group-item>.thumbnail .cont>img{ margin-left: 0; }
+    .thumbnail:hover .btnCustom { margin: 0; font-size: 6px; }
+}
+@media only screen and (max-width : 480px) {
+   
+}
+
+@media only screen and (min-width : 480px) and (max-width : 767px) { /*** iphone5 landscape ***/
+    .thumbnail:hover .btnCustom { font-size: 10px; padding: 8px; }
+    .list-group-item>.thumbnail .caption { padding: 12% 11%; }
+    .thumbnail { width: 100%; }
+}
+
+@media only screen and (min-width : 768px) and (max-width : 1023px) {  /*** tablet portrait ***/
+    .list-group-item>.thumbnail .cont>img{ margin-left: 8%; }
+    .list-group-item>.thumbnail .cont>img{ margin-left: 6%;}
+    .item.list-group-item{ width: 98%;}
+}
+@media (min-width: 991px) {
+  
+}
+@media (max-width: 991px) {
+   
+   
+}
+@media only screen and (min-width : 1024px) and (max-width : 1279px) { /* mini pc */ /* tablet landscape*/
+    .list-group-item>.thumbnail .cont>img{margin-left: 8%;}
+}
+@media (min-width: 1400px) {    /***  zoom in ***/
+    .list-group-item>.thumbnail .caption{padding: 4px 0;}
+    input[name=search]{ width: 290px;}
+}
+/* iPhone 4 ----------- */
+@media only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5) {
+}

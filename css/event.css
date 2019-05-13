@@ -1,0 +1,9 @@
+.group.inner.list-group-item-text{ font-size: 14px;}
+.list-group-item>.thumbnail .list-group-item-text{ font-size: 19px;}
+.btnCustom{ margin-bottom: 1% !important; margin-right: 1%;}
+.btnCustom:hover{ color: white;}
+.list-group-item>.thumbnail .caption>h6{ margin-top: 30px;    margin-bottom: 0;}
+
+
+
+

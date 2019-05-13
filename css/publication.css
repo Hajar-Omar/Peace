@@ -1,0 +1,100 @@
+.thumbnail{ overflow: hidden; }
+
+
+.thumbnail .caption { padding: 20px; display: block; float: left; width: 100%; height: 100%; }
+.overlayHover{ top: 80%; background-color: rgba(0, 0, 0, 0.8); height: auto; bottom: 0;  display: block;}
+.group.inner.list-group-item-text {       margin-bottom: 2%;
+    width: 100%;
+    display: flex; color: white; margin-top: 0; }
+
+.list-group .thumbnail a{ padding: 5px 0;     margin-top: 10px; display: none;
+    border: 2px solid #f1b41e;  font-weight: 400;
+    text-transform: uppercase;  margin-bottom: 3px; float: none; width: 70% !important;}
+.overlayHover i{padding-right: 4%; font-size: 1em; padding-top: 0 !important;}
+
+.overlayHover i, .list-group .thumbnail a{  color: #2b2b2b; font-weight: 600;}
+.fa-download ,.btnCustom:nth-child(4){ background-color: transparent; color: #f1b41e !important;}
+
+.overlayHover hr{ margin: 8px 0 5px 0; margin-left: -20px; width: 37%; border-color: #686256;}
+
+
+.thumbnail:hover .btnCustom {  display: inline-block;}
+.list-group .thumbnail a:hover{ border-color:  #fff; color: #fff !important;}
+.list-group .thumbnail a:hover i{ color: #fff !important;}
+
+.thumbnail:hover .overlayHover{ top: 50%; animation: example 0.5s; animation-timing-function: linear;}
+
+@keyframes example {
+    0%   {top: 80%;}
+    25%  {top: 70%;}
+    50%  {top: 60%;}
+    100% {top: 50%;}
+}
+
+.thumbnail:hover {
+    -webkit-transform: scale(1);
+    transform: scale(1); 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/********************************/
+/*          Media Queries       */
+/********************************/
+@charset "UTF-8";
+/* CSS Document */
+
+@-ms-viewport {
+   width: device-width;
+}
+
+@viewport {
+   width: device-width;
+}
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (max-width : 767px) {     /*** iphone5 portrait ***/
+    input[name=search]{    font-size: 13px;}
+}
+@media only screen and (max-width : 480px) {
+   
+}
+
+@media only screen and (min-width : 480px) and (max-width : 767px) { /*** iphone5 landscape ***/
+    input[name=search]{    font-size: 13px;}
+    .list-group .thumbnail a{     padding: 18px 0; font-size: 20px; margin-top: 30px;}
+}
+
+@media only screen and (min-width : 768px) and (max-width : 1023px) {  /*** tablet portrait ***/
+
+}
+@media (min-width: 991px) {
+  
+}
+@media (max-width: 991px) {
+   
+   
+}
+@media only screen and (min-width : 1024px) and (max-width : 1279px) { /* mini pc */ /* tablet landscape*/
+ 
+}
+@media (min-width: 1400px) {    /***  zoom in ***/
+    input[name=search]{ font-weight: 100;}
+    .list-group .thumbnail a{ padding: 0;}
+    .overlayHover i, .list-group .thumbnail a{font-size: 0.5em;}
+}
+/* iPhone 4 ----------- */
+@media only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5) {
+}
+
+
+
